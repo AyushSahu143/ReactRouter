@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     react()],
-    base: process.env.VITE_BASE_PATH || "/react-router",
+    base: process.env.VITE_BASE_PATH || "/react_dom_router",
 })
