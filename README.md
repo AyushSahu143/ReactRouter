@@ -1,16 +1,66 @@
-# React + Vite
+# React Router Practice (Vite + React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was built to **practice and understand the basics of React Router** using a React + Vite setup.
 
-Currently, two official plugins are available:
+The main goal was **not UI design**, but learning how routing works in a real project by integrating it into **pre-built components** like Header, Footer, and Pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎯 Purpose of This Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Learn **React Router from scratch**
+- Understand how routing works in a Single Page Application (SPA)
+- Practice:
+  - `BrowserRouter`
+  - `Routes` and `Route`
+  - `Link` and `NavLink`
+  - Layout-based routing (Header & Footer persistence)
+- Integrate routing into an **existing UI**, not a blank app
 
-## Expanding the ESLint configuration
+This is a **learning-focused project**, not a production-ready application.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- React
+- Vite
+- React Router DOM
+- Tailwind CSS
+- Git & GitHub
+
+---
+
+## 📁 Project Structure
+
+src/
+├── assets/               # Images and static assets
+├── components/
+│   ├── Header/
+│   ├── Footer/
+│   ├── Home/
+│   ├── About/
+│   └── Contact/
+├── Layout.jsx            # Shared layout with Header + Footer
+├── App.jsx               # Route definitions
+├── main.jsx              # App entry point
+
+---
+
+## 🧭 Routing Overview
+
+- `/` → Home
+- `/about` → About page
+- `/contact` → Contact page
+
+The `Layout` component is used to keep the **Header and Footer persistent** while page content changes using React Router’s `<Outlet />`.
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/AyushSahu143/ReactRouter.git
+cd ReactRouter
